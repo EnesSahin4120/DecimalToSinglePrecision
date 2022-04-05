@@ -129,9 +129,7 @@ public class SinglePrecisionConverter : MonoBehaviour
         {
             int minesContent_Index = IndexOfTarget_from_String("-", targetString);
             if (minesContent_Index == 0)
-            {
                 targetString = targetString.Remove(0, 1);
-            }
         }
 
         //Find index what contains numerical one
