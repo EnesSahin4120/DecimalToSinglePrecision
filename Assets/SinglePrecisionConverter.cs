@@ -292,26 +292,16 @@ public class SinglePrecisionConverter : MonoBehaviour
             //--------------Specific values of zero to be entered by the user--------------
 
             if (target_Next_to_comma_String == "0"|| string.IsNullOrEmpty(target_Next_to_comma_String))
-            {
                 target_Next_to_comma_String = "0";
-            }
             else
-            {
                 target_Next_to_comma_String = Fractional_to_Binary(targetString);
-            }
 
             if (string.IsNullOrEmpty(target_Prev_to_comma_String)||target_Prev_to_comma_String=="0"||target_Prev_to_comma_String=="+" || target_Prev_to_comma_String == "+0")
-            {
                 target_Prev_to_comma_String = "0";
-            }
             else if(target_Prev_to_comma_String=="-0"|| target_Prev_to_comma_String == "-")
-            {
                 target_Prev_to_comma_String = "-0";
-            }
             else
-            {
                 target_Prev_to_comma_String = Int_To_Binary(String_Prev_toComma(targetString, '.'));
-            }
         }
       
         else
@@ -362,16 +352,12 @@ public class SinglePrecisionConverter : MonoBehaviour
             string target_Prev_toComma = String_Prev_toComma(targetString, '.');
 
             if (target_Prev_toComma == "-"|| target_Prev_toComma == "-0")
-            {
                 return "1";
-            }
         }
         else
         {
             if (targetString == "-" || targetString == "-0")
-            {
                 return "1";
-            }
         }
 
         float targetFloat;
